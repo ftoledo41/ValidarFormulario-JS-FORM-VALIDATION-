@@ -1,0 +1,94 @@
+/* ESTILOS GENERALES */
+html, body {
+  height: 100%
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #20649f;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit
+}
+* {
+  margin: 0;
+  padding: 0
+}
+
+.container {
+background-color: #fff;
+padding: 12px 1em 40px;
+margin: 12px auto;
+-webkit-box-shadow: 1px 4px 5px 2px rgba(23, 23, 23, 0.3);
+        box-shadow: 1px 4px 5px 2px rgba(23, 23, 23, 0.3);
+width: 50%;
+}
+.asterisco {
+color: #ff0000;
+}
+p {
+padding: 12px 0;
+line-height: 1.8;
+}
+.form-field {
+padding: 5px 0;
+}
+.mensajeError {
+color: #f20000;
+font-size: 0.9rem;
+line-height: 1.5;
+}
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+width: 100%;
+padding: 10px;
+margin: 15px 0;
+display: inline-block;
+border: 1px solid #ccc;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+background-color: #f0f0f0;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+.registerbtn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+opacity: 0.9;
+width: 100%;
+}
+.registerbtn:hover {
+opacity: 1;
+}
+a {
+color: dodgerblue;
+}
+.signin {
+background-color: #f1f1f1;
+text-align: center;
+}
+.privacy {
+color: #000;
+}
+.aceptarTerminos {
+padding: 22px 0 0;
+}
+.boton {
+padding: 12px 0;
+}
+@media screen and (max-width: 800px){
+.container {
+  width: 100%;
+  padding: 12px 1em;
+}
+}

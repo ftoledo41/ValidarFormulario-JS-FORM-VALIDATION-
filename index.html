@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Form validation</title>
+    <!-- Normalizar estilos -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <form action="" method="POST" novalidate>
+          <div class="container">
+            <h1>Formulario de registro</h1>
+            <p>
+              Por favor, rellena el siguiente formulario para crear una cuenta.
+              <br /><span class="asterisco">*</span>Todos los campos son
+              requeridos.
+            </p>
+            <hr />
+
+            <div class="form-field">
+              <label for="nombre"
+                ><b>Nombre</b><span class="asterisco">*</span></label
+              >
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                required
+                autocomplete="off"
+              />
+              <small class="mensajeError"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="apellido"
+                ><b>Apellido(s)</b><span class="asterisco">*</span></label
+              >
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                required
+                autocomplete="off"
+              />
+              <small class="mensajeError"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="telefono"
+                ><b>Teléfono</b><span class="asterisco">*</span></label
+              >
+              <input
+                type="text"
+                name="telefono"
+                id="telefono"
+                placeholder="Ejemplo: 12345678910"
+                required
+                autocomplete="off"
+              />
+              <small class="mensajeError"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email"
+                ><b>Correo electrónico</b
+                ><span class="asterisco">*</span></label
+              >
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Ejemplo: example@email.com"
+                required
+                autocomplete="off"
+              />
+              <small class="mensajeError"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="contraseña"
+                ><b>Contraseña</b><span class="asterisco">*</span></label
+              >
+              <input
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                required
+                autocomplete="off"
+              />
+              <small class="mensajeError"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="repetircontraseña"
+                ><b>Repetir contraseña</b
+                ><span class="asterisco">*</span></label
+              >
+              <input
+                type="password"
+                name="repetircontraseña"
+                id="repetircontraseña"
+                required
+                autocomplete="off"
+              />
+              <small class="mensajeError"></small>
+            </div>
+
+            <div class="boton">
+              <button type="submit" class="registerbtn">Crear cuenta</button>
+            </div>
+
+            <small class="terminos"
+              >Al presionar el botón "Crear cuenta" confirmo que acepto los
+              <a href="#" class="privacy">Términos y condiciones</a> de este
+              sitio web.</small
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
